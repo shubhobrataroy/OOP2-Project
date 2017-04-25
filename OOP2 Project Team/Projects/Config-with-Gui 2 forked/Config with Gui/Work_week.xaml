@@ -1,0 +1,82 @@
+﻿<Page x:Class="Config_with_Gui.Work_week" x:Name="work_week_page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="496" d:DesignWidth="945"
+	Title="Work_week">
+
+    <Grid Background="#FFEAEAEA"  Opacity=".8">
+
+        <Label Content="WORK WEEK" HorizontalAlignment="Left" Height="48" Margin="330,25,0,0" VerticalAlignment="Top" Width="342"  FontSize="30"/>
+        <Label Content="Saturday :" HorizontalAlignment="Left" Margin="48,115,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.242,0.069" Width="116" Height="35" FontSize="16"/>
+        <Label Content="Sunday :" HorizontalAlignment="Left" Margin="48,155,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.242,0.069" Width="116" Height="35" FontSize="16"/>
+        <Label Content="Monday :" HorizontalAlignment="Left" Margin="48,195,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.242,0.069" Width="116" Height="35" FontSize="16"/>
+
+        <Label Content="Tuesday :" HorizontalAlignment="Left" Margin="48,235,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.242,0.069" Width="116" Height="30" FontSize="16"/>
+        <Label Content="Wednesday :" HorizontalAlignment="Left" Margin="48,275,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.242,0.069" Width="116" Height="35" FontSize="16"/>
+        <Label Content="Thursday :" HorizontalAlignment="Left" Margin="48,315,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.242,0.069" Width="116" Height="35" FontSize="16"/>
+        <ComboBox Name="Sat" HorizontalAlignment="Left" VerticalAlignment="Top" Width="141" RenderTransformOrigin="1.664,3.486" Margin="179,124,0,0" Height="22" SelectionChanged="Sat_SelectionChanged">
+            <ComboBoxItem Content="Full Day" />
+            <ComboBoxItem Content="Half Day" />
+            <ComboBoxItem Content="Non-Working Day" />
+        </ComboBox>
+        <ComboBox Name="Sun" HorizontalAlignment="Left" VerticalAlignment="Top" Width="141" RenderTransformOrigin="1.664,3.486" Margin="179,161,0,0" Height="22" SelectionChanged="Sun_SelectionChanged">
+            <ComboBoxItem Content="Full Day" />
+            <ComboBoxItem Content="Half Day" />
+            <ComboBoxItem Content="Non-Working Day" />
+        </ComboBox>
+        <ComboBox Name="Mon" HorizontalAlignment="Left" VerticalAlignment="Top" Width="141" RenderTransformOrigin="1.664,3.486" Margin="179,195,0,0" Height="22" SelectionChanged="Mon_SelectionChanged">
+            <ComboBoxItem Content="Full Day" />
+            <ComboBoxItem Content="Half Day" />
+            <ComboBoxItem Content="Non-Working Day" />
+        </ComboBox>
+        <ComboBox Name="Tue" HorizontalAlignment="Left" VerticalAlignment="Top" Width="141" RenderTransformOrigin="1.664,3.486" Margin="179,240,0,0" Height="22" SelectionChanged="Tue_SelectionChanged">
+            <ComboBoxItem Content="Full Day" />
+            <ComboBoxItem Content="Half Day" />
+            <ComboBoxItem Content="Non-Working Day" />
+        </ComboBox>
+        <ComboBox Name="Wed" HorizontalAlignment="Left" VerticalAlignment="Top" Width="141" RenderTransformOrigin="1.664,3.486" Margin="179,280,0,0" Height="22" SelectionChanged="Wed_SelectionChanged">
+            <ComboBoxItem Content="Full Day" />
+            <ComboBoxItem Content="Half Day" />
+            <ComboBoxItem Content="Non-Working Day" />
+        </ComboBox>
+        <ComboBox Name="Thu" HorizontalAlignment="Left" VerticalAlignment="Top" Width="141" RenderTransformOrigin="1.664,3.486" Margin="179,320,0,0" Height="22" SelectionChanged="Thu_SelectionChanged">
+            <ComboBoxItem Content="Full Day" />
+            <ComboBoxItem Content="Half Day" />
+            <ComboBoxItem Content="Non-Working Day" />
+        </ComboBox>
+        <Button Content="Save" HorizontalAlignment="Left" Margin="143,398,0,0" VerticalAlignment="Top" Width="89" Height="38" Click="Button_Click" Foreground="White" MouseLeave="Button_Focus_Lost">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="Green"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#FF004000"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="38" Margin="48,398,0,0" VerticalAlignment="Top" Width="290"/>
+        <Label FontSize="16" Content="Friday:" HorizontalAlignment="Left" Margin="48,350,0,0" VerticalAlignment="Top" Width="75"/>
+        <ComboBox Name="Fri" HorizontalAlignment="Left" Margin="179,355,0,0" VerticalAlignment="Top" Width="141" SelectionChanged="Fri_SelectionChanged">
+            <ComboBoxItem Content="Full Day" />
+            <ComboBoxItem Content="Half Day" />
+            <ComboBoxItem Content="Non-Working Day" />
+        </ComboBox>
+        <Label Name="Status" HorizontalAlignment="Left" Margin="343,398,0,0" VerticalAlignment="Top" Width="221" FontSize="16">
+            <Label Content=""/>
+        </Label>
+    </Grid>
+</Page>

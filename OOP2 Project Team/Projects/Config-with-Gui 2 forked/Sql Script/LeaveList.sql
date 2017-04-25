@@ -1,0 +1,3 @@
+USE Leave;
+
+CREATE TABLE

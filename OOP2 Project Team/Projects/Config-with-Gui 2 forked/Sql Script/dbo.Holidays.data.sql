@@ -1,0 +1,5 @@
+INSERT INTO [dbo].[Holidays] ([Name], [Date], [Holiday Type], [Repeats Annually]) VALUES (N'test', N'2016-02-02', N'Full Day', N'Yes')
+INSERT INTO [dbo].[Holidays] ([Name], [Date], [Holiday Type], [Repeats Annually]) VALUES (N'test', N'2016-02-02', N'Full Day', N'Yes')
+INSERT INTO [dbo].[Holidays] ([Name], [Date], [Holiday Type], [Repeats Annually]) VALUES (N'test 2', N'2016-02-16', N'FullDay', N'No')
+INSERT INTO [dbo].[Holidays] ([Name], [Date], [Holiday Type], [Repeats Annually]) VALUES (N'Fix2', N'2016-02-02', N'Full day', N'No')
+INSERT INTO [dbo].[Holidays] ([Name], [Date], [Holiday Type], [Repeats Annually]) VALUES (N'sd', N'2018-02-02', N'Full Day', N'Yes')

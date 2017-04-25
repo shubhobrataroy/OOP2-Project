@@ -1,0 +1,6 @@
+﻿Design your Gui in a Page type xaml NOT A WINDOW type XAML
+To add a page to your solution, right click on your solution > add> new item > Page(Wpf)
+Your Code part of the page must contain "public Page getPage() { return page_name ; }"
+The Height of the Page should be 496
+The Height of the Page should be 945
+You can go through my config.xaml and config.xaml.cs

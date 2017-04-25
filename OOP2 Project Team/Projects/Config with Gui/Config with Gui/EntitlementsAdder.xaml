@@ -1,0 +1,27 @@
+﻿<Page x:Class="Config_with_Gui.EntitlementsAdder"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="496" d:DesignWidth="945"
+	Title="EntitlementAdder">
+
+    <Grid Background="#FFEAEAEA"  Opacity=".8">
+        <Label  Content="ENTITLEMENTS" HorizontalAlignment="Left" Height="48" Margin="330,10,0,0" VerticalAlignment="Top" Width="342" FontSize="30"/>
+        <Label Content="Entitlement ID" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="76,60,0,0" FontSize="20"/>
+        <Label Content="Leave Type" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="76,123,0,0" FontSize="20"/>
+        <Label Content="Entitlement Type" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="76,197,0,0" FontSize="20"/>
+        <Label Content="Valid From" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="76,271,0,0" FontSize="20"/>
+        <Label Content="Valid To" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="76,345,0,0" FontSize="20"/>
+        <Label Content="Balance" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="76,419,0,0" FontSize="20"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="265,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" x:Name="id"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="265,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" x:Name="leaveType"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="265,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" x:Name="entitlementType"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="265,282,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="198" x:Name="validFrom"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="265,356,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" x:Name="validTo"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="265,430,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" x:Name="balance"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="176,458,0,0" VerticalAlignment="Top" Height="37" Width="150" FontSize="20" FontWeight="Bold" Click="Button_Click"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="403,458,0,0" VerticalAlignment="Top" Height="37" Width="150" FontSize="20" FontWeight="Bold" Click="Button_Click_1"/>
+    </Grid>
+</Page>

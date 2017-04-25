@@ -1,0 +1,84 @@
+Please go through some short tips, which are ...
+
+
+
+Functionality
+.............
+
+
+
+1. Remove Buttons where not needed. The TreeViewItems should simply expand to view sub-options. The
+
+   sub-options, when clicked, should view the page containing buttons for performing the specified
+
+   operation.
+
+	Example:
+
+	> Entitlements --> Expands and views the sub-options when clicked
+
+		> Add Entitlements --> Navigates to the page for adding entitlements
+
+		> Employee Entitlements --> Navigates to the page that views entitlements
+
+
+
+Code
+.............
+
+
+
+2. Keep Page references as private attributes for the class MainWindow. Calling the constructor for a
+
+   new Page every time navigation is done consumes memory + time = money.
+
+	Example:
+	
+	public partial class MainWindow : Window
+	
+	{
+	    
+	//  Store page references
+	    
+	    private Page page_1, page_2 ... page_n;
+	    
+	    public MainWindow()	{
+		
+		page_1 = new Page(Container.Height, Container.Width);
+		
+		page_2 = new Page(Container.Height, Container.Width);
+		
+		.
+		.
+		.
+	    
+	    }
+
+	    .
+	    .
+	    .
+	
+	}
+
+	N.B: Instead of Page, use the respective classes inherited from Page.
+
+
+
+3. Remove GetPage(height : double, width : double) : Page. Maintain the size by passing values to the
+
+   constructor as shown in the previous example for shortening code.
+
+
+
+4. If possible, remove public static Frame page_container from the MainWindow. The Pages should
+
+   contain private methods for handling button click events and hence the page_container is not
+
+   needed. Similarly the class MainWindow should contain only private methods for navigating
+
+   through pages.
+
+
+
+
+

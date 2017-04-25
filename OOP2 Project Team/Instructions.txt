@@ -1,0 +1,4 @@
+Capitalization
+
+1. Capitalize the first letter of your namespace and class names (MyNamespace, MyClass)
+2. Put your object names to camel case (myObject)

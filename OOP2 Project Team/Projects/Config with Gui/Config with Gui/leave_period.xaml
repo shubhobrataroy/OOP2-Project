@@ -1,0 +1,87 @@
+﻿<Page x:Class="Config_with_Gui.leave_period" x:Name="leave_period_page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="496" d:DesignWidth="945"
+	Title="leave_period">
+
+    <Grid Background="#FFEAEAEA"  Opacity=".8">
+        
+        <Label  Content="LEAVE PERIOD" HorizontalAlignment="Left" Height="48" Margin="330,10,0,0" VerticalAlignment="Top" Width="342" FontSize="30"/>
+        <Rectangle Fill="#FFEAEAEA"  Opacity=".9" HorizontalAlignment="Left" Height="342" Margin="116,70,0,0" Stroke="Black" VerticalAlignment="Top" Width="704" />
+        <Label  Content="Start Month  :" HorizontalAlignment="Left" Height="44" Margin="184,89,0,0" VerticalAlignment="Top" Width="200"  FontSize="24" RenderTransformOrigin="0.013,0.455"/>
+        <Label  Content="Start Date     :" HorizontalAlignment="Left" Height="45" Margin="184,162,0,0" VerticalAlignment="Top" Width="184"  FontSize="24"/>
+        <ComboBox HorizontalAlignment="Left" Height="44" Margin="405,89,0,0" VerticalAlignment="Top" Width="185" RenderTransformOrigin="0.459,-0.2"/>
+        <ComboBox HorizontalAlignment="Left" Height="44" Margin="405,163,0,0" VerticalAlignment="Top" Width="185" RenderTransformOrigin="0.459,-0.2"/>
+        <Label  Content="End Date      :" HorizontalAlignment="Left" Height="45" Margin="184,230,0,0" VerticalAlignment="Top" Width="184"  FontSize="24"/>
+        <ComboBox HorizontalAlignment="Left" Height="44" Margin="405,230,0,0" VerticalAlignment="Top" Width="185" RenderTransformOrigin="0.459,-0.2"/>
+        <Button Content="Reset" HorizontalAlignment="Left" Height="35" Margin="543,436,0,0" VerticalAlignment="Top" Width="110"  FontSize="24" Foreground="White">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="#0040FF"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#FF004000"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Button HorizontalAlignment="Left" Height="35" Margin="258,436,0,0" VerticalAlignment="Top" Width="110" Content="Save"  FontSize="24" Foreground="White">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="#0040FF"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#FF004000"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Button Content="Edit" HorizontalAlignment="Left" Height="35" Margin="392,436,0,0" VerticalAlignment="Top" Width="127"  FontSize="24" Foreground="White">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="#0040FF"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#FF004000"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Label  Content="Current Leave Period:" HorizontalAlignment="Left" Height="38" Margin="184,310,0,0" VerticalAlignment="Top" Width="238"  FontSize="24"/>
+        <Label  Content="13-02-2016 to 12-02-2017" HorizontalAlignment="Left" Height="51" Margin="422,310,0,0" VerticalAlignment="Top" Width="290" FontSize="22"/>
+
+    </Grid>
+</Page>

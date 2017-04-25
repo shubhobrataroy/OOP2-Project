@@ -1,0 +1,15 @@
+﻿<Page x:Class="Config_with_Gui.EntitlementsHandler"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="496" d:DesignWidth="945"
+	Title="Entitlements">
+
+    <Grid>
+        <Button Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" Width="170" Height="92" Margin="272,205,0,0" Click="Button_Click"/>
+        <Button Content="View" HorizontalAlignment="Left" VerticalAlignment="Top" Width="170" Height="92" Margin="502,205,0,0" Click="Button_Click_1"/>
+
+    </Grid>
+</Page>

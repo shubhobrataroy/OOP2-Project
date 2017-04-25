@@ -1,0 +1,75 @@
+The followign methods return the contents of the table through System.Data.DataTable
+
+
+
+
+
+METHOD							DESCRIPTION [SQL]
+
+
+
+
+
+Select()						SELECT *
+							FROM TABLE
+
+
+
+
+Select(string rowConstraints)				SELECT *
+							FROM TABLE
+							WHERE [rowConstraints]
+
+
+
+SelectSorted(string orderingSequence)			SELECT *
+							FROM TABLE
+							ORDER BY [orderingSequence]
+
+
+
+SelectSorted(string rowConstraints,			SELECT *
+	     string orderingSequence)			FROM TABLE
+							WHERE [rowConstraints]
+							ORDER BY [orderingSequence]
+
+
+SelectSpecific(string columns)				SELECT [columns]
+							FROM TABLE
+
+
+
+
+SelectSpecific(string columns,				SELECT [columns]
+	       string rowConstraints)			FROM TABLE
+							WHERE [rowConstraints]
+
+
+
+SelectSpecificSorted(string columns,			SELECT [columns]
+		     string orderingSequence)		FROM TABLE
+							ORDER BY [orderingSequence]
+
+
+
+SelectSpecificSorted(string columns,			SELECT [columns]
+		     string rowConstraints,		FROM TABLE
+		     string orderingSequence)		WHERE [rowConstraints]
+							ORDER BY [orderingSequence]
+
+
+
+
+
+
+
+
+Constructor
+
+
+
+
+
+TableTracker(string server,				Uses windows authentication to
+	     string database,				connect to the table specified by 'tableName'
+	     string tableName)				in the database specified by 'database'in the server named 'server'
